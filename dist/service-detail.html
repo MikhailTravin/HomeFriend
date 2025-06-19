@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Сервис - детальная</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/hystmodal.min.css" />
+		<link rel="stylesheet" href="css/fancybox.min.css" />
+		<link rel="stylesheet" href="css/styles.css?v=1750078480246" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+	</head>
+
+	<body class="preload mp">
+		<div class="main-wrapper-outer">
+			<header class="header">
+				<div class="container">
+					<div class="header__content">
+						<a href="index.html" class="header__logo">
+							<img src="img/logo-home-friend.svg" alt="">
+						</a>
+						<div class="header__menu">
+							<div class="header__body">
+								<div class="header__burger-menu">
+									<div class="header__top">
+										<div class="contacts">
+											<div class="contact">
+												<div class="contact__item">
+													<svg aria-hidden="true" width="15" height="18">
+														<use xlink:href="img/sprite.svg#location"></use>
+													</svg>
+													<span>г. Москва, ул. Шеногина, д. 4 корп.1</span>
+												</div>
+											</div>
+											<div class="contact">
+												<div class="contact__item">
+													<svg aria-hidden="true" width="18" height="18">
+														<use xlink:href="img/sprite.svg#clock"></use>
+													</svg>
+													<span>ПН-ПТ с 9:00 до 18:00</span>
+												</div>
+												<a href="mailto:homefriend@mail.ru" class="contact__item">
+													<svg aria-hidden="true" width="18" height="14">
+														<use xlink:href="img/sprite.svg#email"></use>
+													</svg>
+													<span>homefriend@mail.ru</span>
+												</a>
+												<a href="tel:79998765432" class="contact__item">
+													<svg aria-hidden="true" width="18" height="18">
+														<use xlink:href="img/sprite.svg#phone"></use>
+													</svg>
+													<span>+7 (999) 876-54-32</span>
+												</a>
+											</div>
+										</div>
+										<button type="button" data-hystmodal="#modalCallback" class="btn">Заказать звонок</button>
+									</div>
+									<div class="header__bottom">
+										<div class="header__catalog header-catalog">
+											<div class="header-catalog__button">
+												<a href="catalog.html" class="btn btn_primary ">
+													<div class="header-catalog__icon"><span></span></div>
+													<span>Каталог</span>
+												</a>
+											</div>
+											<div class="menu__button">
+												<svg aria-hidden="true" width="16" height="9">
+													<use xlink:href="img/sprite.svg#chevron2"></use>
+												</svg>
+											</div>
+											<div class="header-catalog__submenu1 submenu1">
+												<ul>
+													<li>
+														<a class="menu__sublink1" href="catalog-detail.html">
+															<span>Архитектурный бетон</span>
+														</a>
+														<div class="menu__button2">
+															<svg aria-hidden="true" width="16" height="9">
+																<use xlink:href="img/sprite.svg#chevron2"></use>
+															</svg>
+														</div>
+														<div class="menu__submenu2">
+															<button type="button" class="menu__back">
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																<span>Архитектурный бетон</span>
+															</button>
+															<ul>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки фасадов</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки цоколей</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<a class="menu__sublink1" href="catalog-detail.html">
+															<span>Искусственный камень</span>
+														</a>
+														<div class="menu__button2">
+															<svg aria-hidden="true" width="16" height="9">
+																<use xlink:href="img/sprite.svg#chevron2"></use>
+															</svg>
+														</div>
+														<div class="menu__submenu2">
+															<button type="button" class="menu__back">
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																<span>Архитектурный бетон</span>
+															</button>
+															<ul>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки фасадов</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки цоколей</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<a class="menu__sublink1" href="catalog-detail.html">
+															<span>Термопанели</span>
+														</a>
+														<div class="menu__button2">
+															<svg aria-hidden="true" width="16" height="9">
+																<use xlink:href="img/sprite.svg#chevron2"></use>
+															</svg>
+														</div>
+														<div class="menu__submenu2">
+															<button type="button" class="menu__back">
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																<span>Архитектурный бетон</span>
+															</button>
+															<ul>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки фасадов</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки цоколей</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<a class="menu__sublink1" href="catalog-detail.html">
+															<span>Гибкий кирпич</span>
+														</a>
+														<div class="menu__button2">
+															<svg aria-hidden="true" width="16" height="9">
+																<use xlink:href="img/sprite.svg#chevron2"></use>
+															</svg>
+														</div>
+														<div class="menu__submenu2">
+															<button type="button" class="menu__back">
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																<span>Архитектурный бетон</span>
+															</button>
+															<ul>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки фасадов</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки цоколей</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<a class="menu__sublink1" href="catalog-detail.html">
+															<span>Гибкая керамика</span>
+														</a>
+														<div class="menu__button2">
+															<svg aria-hidden="true" width="16" height="9">
+																<use xlink:href="img/sprite.svg#chevron2"></use>
+															</svg>
+														</div>
+														<div class="menu__submenu2">
+															<button type="button" class="menu__back">
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																<span>Архитектурный бетон</span>
+															</button>
+															<ul>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки фасадов</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки цоколей</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<a class="menu__sublink1" href="catalog-detail.html">
+															<span>Термодревесина</span>
+														</a>
+														<div class="menu__button2">
+															<svg aria-hidden="true" width="16" height="9">
+																<use xlink:href="img/sprite.svg#chevron2"></use>
+															</svg>
+														</div>
+														<div class="menu__submenu2">
+															<button type="button" class="menu__back">
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																<span>Архитектурный бетон</span>
+															</button>
+															<ul>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки фасадов</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки цоколей</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<a class="menu__sublink1" href="catalog-detail.html">
+															<span>Строительные материалы</span>
+														</a>
+														<div class="menu__button2">
+															<svg aria-hidden="true" width="16" height="9">
+																<use xlink:href="img/sprite.svg#chevron2"></use>
+															</svg>
+														</div>
+														<div class="menu__submenu2">
+															<button type="button" class="menu__back">
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+																<span>Архитектурный бетон</span>
+															</button>
+															<ul>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки фасадов</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="menu__sublink2">
+																		<span>Для отделки цоколей</span>
+																		<svg aria-hidden="true" width="16" height="9">
+																			<use xlink:href="img/sprite.svg#chevron2"></use>
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="overlay"></div>
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a class="menu__link" href="brands.html">
+													<span>бренды</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="customers.html">
+													<span>покупателям</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="media.html">медиа</a>
+												<div class="menu__button">
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</div>
+												<div class="menu__submenu1 submenu1">
+													<ul>
+														<li>
+															<a class="menu__sublink1" href="photo.html">
+																<span>Фото</span>
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+															</a>
+														</li>
+														<li>
+															<a class="menu__sublink1" href="video.html">
+																<span> Видео</span>
+																<svg aria-hidden="true" width="16" height="9">
+																	<use xlink:href="img/sprite.svg#chevron2"></use>
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="about.html">
+													<span> О нас</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="news.html">
+													<span> новости</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="service.html">
+													<span>Сервис</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="contacts.html">
+													<span>контакты</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="delivery.html">
+													<span>доставка</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="montage.html">
+													<span>монтаж</span>
+													<svg aria-hidden="true" width="16" height="9">
+														<use xlink:href="img/sprite.svg#chevron2"></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="search">
+								<button class="btn btn_primary search__button" type="button">
+									<svg aria-hidden="true" width="20" height="20">
+										<use xlink:href="img/sprite.svg#search1"></use>
+									</svg>
+									<span class="v-h">Поиск</span>
+								</button>
+								<div class="search__inner">
+									<form action="search.php">
+										<input class="search__input" placeholder="Поиск" type="text">
+										<button class="btn btn_primary btn_circle" type="submit">
+											<svg aria-hidden="true" width="20" height="20">
+												<use xlink:href="img/sprite.svg#search1"></use>
+											</svg>
+											<span class="v-h">Искать</span>
+										</button>
+									</form>
+									<div class="search__dropdown">
+										<!--
+              <div class="search__nofound">
+                Ничего не найдено
+              </div>
+              -->
+										<ul class="search__results">
+											<li>
+												<a href="#">
+													<img loading="lazy" src="img/products/product1.webp" alt="">
+													<span>Искусственный камень</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img loading="lazy" src="img/products/product1.webp" alt="">
+													<span>Искусственный камень</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img loading="lazy" src="img/products/product1.webp" alt="">
+													<span>Искусственный камень</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Искусственный камень</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Искусственный камень</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<a class="header__cart btn" href="cart.html">
+								<svg aria-hidden="true" width="24" height="24">
+									<use xlink:href="img/sprite.svg#basket1"></use>
+								</svg>
+								<span class="v-h">Товаров в корзине:</span>
+								<span class="btn__count">2</span>
+							</a>
+							<button type="button" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+
+				<div class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="index.html">
+									Главная
+								</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="index.html">
+									Сервис
+								</a>
+							</li>
+							<li class="breadcrumbs__item is-active">
+								<span>Доставка</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="block-detail block2">
+					<div class="container">
+						<div class="block-detail__content">
+							<div class="block-detail__image">
+								<img src="img/service/image6.webp" alt="">
+								<div class="block-detail__image-item">
+									<h1 class="title1">
+										Доставка
+									</h1>
+									<a href="#" class="btn btn_primary">
+										<span>Заказать услугу</span>
+										<svg aria-hidden="true" width="16" height="16">
+											<use xlink:href="img/sprite.svg#arrow1"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="block-detail__bottom">
+								<div class="descr">
+									<h3>
+										Если Вы собираетесь приобрести или уже приобрели строительные материалы
+										в нашей компании и хотите оформить доставку - мы непременно поможем Вам!
+									</h3>
+									<p>
+										Отдел транспортной логистики компании «МТМ» предлагает решение всех вопросов,
+										связанных с погрузкой и доставкой приобретенных у нас товаров по Москве и России.
+									</p>
+									<h4>Отдел транспортной логистики осуществит комплекс услуг:</h4>
+									<ul>
+										<li>
+											Обеспечит подбор необходимого транспорта и отследит его передвижение.
+										</li>
+										<li>
+											Укомплектует и организует доставку сборных грузов.
+										</li>
+										<li>
+											Составит оптимальный маршрут.
+										</li>
+										<li>
+											Оформит необходимую документацию.
+										</li>
+										<li>
+											Даст рекомендации по страхованию груза.
+										</li>
+										<li>
+											Предоставит рекомендации по упаковке приобретенных материалов.
+										</li>
+									</ul>
+									<h4>Доставка по Москве и Московской области осуществляется следующим образом:</h4>
+									<ul>
+										<li>
+											В сезон (апрель-ноябрь) с 12:00 до 22:00;
+										</li>
+										<li>
+											В несезон (ноябрь-апрель) с 12:00 до 21:00.
+										</li>
+									</ul>
+									<p class="border">
+										<span>Стоимость доставки может частично или полностью компенсироваться в зависимости
+											от купленных товаров.</span>
+										Дополнительную информацию по стоимости и срокам доставки Вы
+										можете уточнить у менеджеров компании. Разгрузка на объекте осуществляется силами
+										заказчика.
+									</p>
+									<h4>
+										Таблица вместимости автотранспорта
+									</h4>
+									<div class="table">
+										<div class="table__main">
+											<div class="table__name first">№</div>
+											<div class="table__names">
+												<div class="table__name">1</div>
+												<div class="table__name">2</div>
+												<div class="table__name">3</div>
+												<div class="table__name">4</div>
+												<div class="table__name">5</div>
+												<div class="table__name">6</div>
+												<div class="table__name">7</div>
+												<div class="table__name">8</div>
+												<div class="table__name">9</div>
+												<div class="table__name">10</div>
+												<div class="table__name">11</div>
+											</div>
+										</div>
+										<div data-swiper-wrapper="swiper-tables" class="table__body">
+											<div data-swiper="swiper-tables" class="swiper-tables swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="table__name first">Марка,тип автотранспорта</div>
+														<div class="table__names">
+															<div class="table__name">Газель (тент, фургон, борт)</div>
+															<div class="table__name">Газель дл.база (борт - 4,2м)</div>
+															<div class="table__name">Газ, Зил - бычок (фургон, борт)</div>
+															<div class="table__name">Зил (фургон, борт)</div>
+															<div class="table__name">МАЗ, Камаз, Иномарки (тент, фургон) (6м
+																- 9м) </div>
+															<div class="table__name">МАЗ, Камаз, Иномарки (борт 5,2м - 6м)
+															</div>
+															<div class="table__name">Евротент</div>
+															<div class="table__name">Шаланда 9м</div>
+															<div class="table__name">Шаланда 12м</div>
+															<div class="table__name">Кран (стрела 14м)</div>
+															<div class="table__name">Кран (стрела 32м)</div>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="table__name first">Грузоподъемность, тонн</div>
+														<div class="table__names">
+															<div class="table__name">1,5</div>
+															<div class="table__name">2,0</div>
+															<div class="table__name">до 4,5</div>
+															<div class="table__name">6</div>
+															<div class="table__name">до 14</div>
+															<div class="table__name">до 10</div>
+															<div class="table__name">20</div>
+															<div class="table__name">15</div>
+															<div class="table__name">20</div>
+															<div class="table__name">14</div>
+															<div class="table__name">30</div>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="table__name first">Объем, куб.м.</div>
+														<div class="table__names">
+															<div class="table__name">9-12</div>
+															<div class="table__name">-</div>
+															<div class="table__name">15</div>
+															<div class="table__name">16-18</div>
+															<div class="table__name">30-50</div>
+															<div class="table__name">-</div>
+															<div class="table__name">82</div>
+															<div class="table__name">-</div>
+															<div class="table__name">-</div>
+															<div class="table__name">-</div>
+															<div class="table__name">-</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-scrollbar"></div>
+										</div>
+									</div>
+									<h4>
+										Доставка и оплата в Москве и Московской обл.
+									</h4>
+									<blockquote>
+										<p>
+											Стоимость доставки может частично или полностью компенсироваться в зависимости
+											от купленных товаров. Дополнительную информацию по стоимости и срокам доставки
+											Вы можете уточнить у менеджеров компании. Разгрузка на объекте осуществляется
+											силами заказчика.
+										</p>
+									</blockquote>
+								</div>
+								<div class="contacts-info">
+									<div class="contacts-info__sticky">
+										<div class="contacts-info__item">
+											<div class="contacts-info__name">
+												Контактная информация
+											</div>
+											<div class="contact">
+												<div class="contact__item">
+													<svg aria-hidden="true" width="15" height="18">
+														<use xlink:href="img/sprite.svg#location"></use>
+													</svg>
+													<span>г.&nbsp;Москва, ул.&nbsp;Шеногина, д.&nbsp;4 корп.1</span>
+												</div>
+												<a href="mailto:homefriend@mail.ru" class="contact__item">
+													<svg aria-hidden="true" width="18" height="14">
+														<use xlink:href="img/sprite.svg#email"></use>
+													</svg>
+													<span>homefriend@mail.ru</span>
+												</a>
+												<a href="tel:79998765432" class="contact__item">
+													<svg aria-hidden="true" width="18" height="18">
+														<use xlink:href="img/sprite.svg#phone"></use>
+													</svg>
+													<span>+7 (999) 876-54-32</span>
+												</a>
+												<div class="contact__item">
+													<svg aria-hidden="true" width="18" height="18">
+														<use xlink:href="img/sprite.svg#clock"></use>
+													</svg>
+													<span>ПН-ПТ с 9:00 до 18:00</span>
+												</div>
+											</div>
+											<a href="#" class="btn btn_primary">
+												<span>Заказать услугу</span>
+												<svg aria-hidden="true" width="16" height="16">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</main>
+			<footer class="footer">
+				<div class="footer__top top-footer">
+					<div class="container">
+						<div class="top-footer__content">
+							<a href="index.html" class="top-footer__logo">
+								<img loading="lazy" src="img/logo-home-friend.svg" alt="">
+							</a>
+							<div class="top-footer__menu">
+								<div class="top-footer__column">
+									<div class="top-footer__row">
+										<a href="catalog.html" class="top-footer__title">каталог</a>
+										<ul>
+											<li>
+												<a href="catalog-detail.html">
+													Архитектурный бетон
+												</a>
+											</li>
+											<li>
+												<a href="catalog-detail.html">
+													Искусственный камень
+												</a>
+											</li>
+											<li>
+												<a href="catalog-detail.html">Термопанели</a>
+											</li>
+											<li>
+												<a href="catalog-detail.html">Гибкий кирпич</a>
+											</li>
+											<li>
+												<a href="catalog-detail.html">Гибкая керамика</a>
+											</li>
+											<li>
+												<a href="catalog-detail.html">Термодревесина</a>
+											</li>
+											<li>
+												<a href="catalog-detail.html">
+													Строительные материалы
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="top-footer__column">
+									<div class="top-footer__row">
+										<a href="customers.html" class="top-footer__title">покупателям</a>
+										<ul>
+											<li>
+												<a href="delivery.html">
+													Доставка и оплата
+												</a>
+											</li>
+											<li>
+												<a href="service.html">
+													Сервисная поддержка
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="top-footer__row">
+										<a href="media.html" class="top-footer__title">медиа</a>
+										<ul>
+											<li>
+												<a href="photo.html">
+													Фото
+												</a>
+											</li>
+											<li>
+												<a href="video.html">
+													Видео
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="top-footer__column">
+									<div class="top-footer__row">
+										<a href="brands.html" class="top-footer__title">бренды</a>
+										<a href="builders.html" class="top-footer__title">строителям</a>
+										<a href="news.html" class="top-footer__title">новости</a>
+										<a href="about.html" class="top-footer__title">О нас</a>
+										<a href="service.html" class="top-footer__title">Сервис</a>
+										<a href="contacts.html" class="top-footer__title">контакты</a>
+										<a href="service-detail.html" class="top-footer__title">доставка</a>
+										<a href="montage.html" class="top-footer__title">монтаж</a>
+									</div>
+								</div>
+							</div>
+							<div class="contacts">
+								<div class="contact">
+									<div class="contact__item">
+										<svg aria-hidden="true" width="15" height="18">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg>
+										<span>г. Москва, ул. Шеногина, д. 4 корп.1</span>
+									</div>
+								</div>
+								<div class="contact">
+									<a href="tel:79998765432" class="contact__item">
+										<svg aria-hidden="true" width="18" height="18">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg>
+										<span>+7 (999) 876-54-32</span>
+									</a>
+									<a href="mailto:homefriend@mail.ru" class="contact__item email">
+										<svg aria-hidden="true" width="18" height="14">
+											<use xlink:href="img/sprite.svg#email"></use>
+										</svg>
+										<span>homefriend@mail.ru</span>
+									</a>
+									<div class="contact__item">
+										<svg aria-hidden="true" width="18" height="18">
+											<use xlink:href="img/sprite.svg#clock"></use>
+										</svg>
+										<span>ПН-ПТ с 9:00 до 18:00</span>
+									</div>
+								</div>
+								<div class="socials">
+									<a href="#" class="social">
+										<svg aria-hidden="true" width="20" height="12">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a>
+									<a href="#" class="social">
+										<svg aria-hidden="true" width="18" height="14">
+											<use xlink:href="img/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+									<a href="#" class="social">
+										<svg aria-hidden="true" width="16" height="16">
+											<use xlink:href="img/sprite.svg#instagram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="container">
+						<div class="bottom-footer__content">
+							<div class="bottom-footer__copy">
+								© 2025 Home Friend Facade Studio. Все права защищены
+							</div>
+							<div class="bottom-footer__column">
+								<a href="policy.html">Политика конфиденциальности</a>
+								<a href="#">Публичная оферта</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="hystmodal" id="modalCallback" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window" role="dialog" aria-modal="true">
+					<div class="hystmodal__inner">
+						<div class="hystmodal__top">
+							<div class="hystmodal__title">Закажите звонок</div>
+							<div class="hystmodal__description textblock">
+								Наши специалисты свяжуться с Вами в ближайшее время
+							</div>
+						</div>
+						<form data-validate action="feedback.php">
+							<div class="form-grid1">
+								<div class="form-grid1__row">
+									<div class="form-group form-group1">
+										<input class="field-input1" id="feedback_name" name="feedback_name" placeholder="" type="text" required>
+										<label for="feedback_name" class="form-group1__placeholder form-group1__placeholder_req">ФИО</label>
+									</div>
+								</div>
+								<div class="form-grid1__row">
+									<div class="form-group form-group1">
+										<input class="field-input1" data-type="phone" data-mask="phone" id="feedback_phone" name="feedback_phone" placeholder=" " type="text" required>
+										<label for="feedback_phone" class="form-group1__placeholder form-group1__placeholder_req"><span>+7</span>
+											(999)-99-99</label>
+									</div>
+								</div>
+								<div class="form-grid1__buttons">
+									<button class="btn btn_primary" type="submit">
+										<span>Заказать звонок</span>
+									</button>
+									<div class="textblock1 textblock1_small">
+										Нажимая на кнопку «Заказать звонок», Вы соглашаетесь
+										на <a href="#">обработку персональных данных</a> и с <a href="#">публичной офертой</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<button data-hystclose class="hystmodal__close">
+						<svg aria-hidden="true" width="20" height="20">
+							<use xlink:href="img/sprite.svg#close1"></use>
+						</svg>
+						<span class="v-h">Закрыть</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.7.0.min.js"></script>
+		<script src="js/swiper-10.2.0.min.js"></script>
+		<script src="js/hystmodal.min.js"></script>
+		<script src="js/dragscroll.min.js"></script>
+		<script src="js/overlayscrollbars-2.3.0.min.js"></script>
+		<script src="js/imask.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/tom-select.complete.min.js"></script>
+		<script src="js/fancybox.umd.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/tippy-bundle.umd.min.js"></script>
+		<script src="js/dragscroll.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/wNumb.min.js"></script>
+		<script src="js/scripts.js?v=1750078480246"></script>
+	</body>
+
+</html>
