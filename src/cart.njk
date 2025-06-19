@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Корзина</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__item is-active">
+							<span>Корзина</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="heading-complex">
+				<div class="heading-complex__cart">
+					<h1 class="title2">Корзина</h1>
+					<button type="button" class="heading-complex__delete">
+						<svg width="20" height="20" aria-hidden="true">
+							<use xlink:href="img/sprite.svg#delete"></use>
+						</svg>
+						<span>Очистить корзину</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="block-cart block2">
+				<div class="container">
+					<div class="block-cart__content">
+						<div class="cards-product">
+							<div class="card-product">
+								<div class="card-product__image">
+									<img loading="lazy" src="img/products/product2.webp" alt="">
+								</div>
+								<div class="card-product__item">
+									<a href="product-card.html" class="card-product__top">
+										<div class="card-product__article">
+											Артикул: PSVE-1044
+										</div>
+										<div class="card-product__title">
+											Софит Docke Premium с центральной перфорацией
+										</div>
+										<div class="card-product__stock">
+											В наличии
+										</div>
+									</a>
+									<div class="card-product__bottom">
+										<div class="card-product__stepcounter">
+											<div data-stepcounter class="stepcounter stepcounter_accent">
+												<button class="stepcounter__btn" data-stepcounter="-" type="button">
+													<svg width="14" height="2" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+												</button>
+												<input data-stepcounter-input class="stepcounter__input" type="number"
+													value="100" min="1" max="100" name="stepcounter1" readonly="">
+												<button class="stepcounter__btn" data-stepcounter="+" type="button">
+													<svg width="14" height="14" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+												</button>
+											</div>
+											<span>упаковок</span>
+										</div>
+										<div class="card-product__prices">
+											<div class="card-product__old-price">
+												<s>
+													1 200 ₽
+												</s>
+												<div class="card-product__sale">
+													-20%
+												</div>
+											</div>
+											<div class="card-product__price">
+												852 ₽/кв.м
+											</div>
+										</div>
+									</div>
+									<div class="card-product__delete">
+										<svg width="20" height="20" aria-hidden="true">
+											<use xlink:href="img/sprite.svg#delete"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="card-product">
+								<div class="card-product__image">
+									<img loading="lazy" src="img/products/product2.webp" alt="">
+								</div>
+								<div class="card-product__item">
+									<a href="product-card.html" class="card-product__top">
+										<div class="card-product__article">
+											Артикул: PSVE-1044
+										</div>
+										<div class="card-product__title">
+											Софит Docke Premium с центральной перфорацией
+										</div>
+										<div class="card-product__stock">
+											В наличии
+										</div>
+									</a>
+									<div class="card-product__bottom">
+										<div class="card-product__stepcounter">
+											<div data-stepcounter class="stepcounter stepcounter_accent">
+												<button class="stepcounter__btn" data-stepcounter="-" type="button">
+													<svg width="14" height="2" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+												</button>
+												<input data-stepcounter-input class="stepcounter__input" type="number"
+													value="1" min="1" max="100" name="stepcounter1" readonly="">
+												<button class="stepcounter__btn" data-stepcounter="+" type="button">
+													<svg width="14" height="14" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+												</button>
+											</div>
+											<span>штука</span>
+										</div>
+										<div class="card-product__prices">
+											<div class="card-product__old-price">
+												<s>
+													1 200 ₽
+												</s>
+												<div class="card-product__sale">
+													-20%
+												</div>
+											</div>
+											<div class="card-product__price">
+												852 ₽/кв.м
+											</div>
+										</div>
+									</div>
+									<div class="card-product__delete">
+										<svg width="20" height="20" aria-hidden="true">
+											<use xlink:href="img/sprite.svg#delete"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="card-product">
+								<div class="card-product__image">
+									<img loading="lazy" src="img/products/product2.webp" alt="">
+								</div>
+								<div class="card-product__item">
+									<a href="product-card.html" class="card-product__top">
+										<div class="card-product__article">
+											Артикул: PSVE-1044
+										</div>
+										<div class="card-product__title">
+											Софит Docke Premium с центральной перфорацией
+										</div>
+										<div class="card-product__stock">
+											В наличии
+										</div>
+									</a>
+									<div class="card-product__bottom">
+										<div class="card-product__stepcounter">
+											<div data-stepcounter class="stepcounter stepcounter_accent">
+												<button class="stepcounter__btn" data-stepcounter="-" type="button">
+													<svg width="14" height="2" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#minus1"></use>
+													</svg>
+												</button>
+												<input data-stepcounter-input class="stepcounter__input" type="number"
+													value="1" min="1" max="100" name="stepcounter1" readonly="">
+												<button class="stepcounter__btn" data-stepcounter="+" type="button">
+													<svg width="14" height="14" aria-hidden="true">
+														<use xlink:href="img/sprite.svg#plus1"></use>
+													</svg>
+												</button>
+											</div>
+											<span>упаковка</span>
+										</div>
+										<div class="card-product__prices">
+											<div class="card-product__old-price">
+												<s>
+													1 200 ₽
+												</s>
+												<div class="card-product__sale">
+													-20%
+												</div>
+											</div>
+											<div class="card-product__price">
+												852 ₽/кв.м
+											</div>
+										</div>
+									</div>
+									<div class="card-product__delete">
+										<svg width="20" height="20" aria-hidden="true">
+											<use xlink:href="img/sprite.svg#delete"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="detail-cart">
+							<div class="detail-cart__sticky">
+								<div class="detail-cart__title">
+									Детали заказа
+								</div>
+								<ul>
+									<li>
+										<div class="detail-cart__name">3 товара</div>
+										<div class="detail-cart__value">3600 ₽</div>
+									</li>
+									<li>
+										<div class="detail-cart__name">Скидка</div>
+										<div class="detail-cart__value green">-1044 ₽</div>
+									</li>
+								</ul>
+								<div class="detail-cart__totals">
+									<div class="detail-cart__total">Итого:</div>
+									<div class="detail-cart__sum">2556 ₽</div>
+								</div>
+								<a href="order.html" class="btn btn_black">Оформить заказ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/popups.njk' %}
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

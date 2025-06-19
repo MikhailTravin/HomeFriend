@@ -1,0 +1,144 @@
+.main-wrapper-outer {
+  width: 100%;
+  min-height: 100%;
+  max-width: var(--main-outer-width);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.header {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 140px 0px 0px 0px;
+  body:not(.mp) & {
+    padding-bottom: clamp(50px, 5vw, 100px);
+  }
+  @media (max-width: 1300px) {
+    padding: 95px 0px 0px 0px;
+  }
+  @media (max-width: 992px) {
+    padding: 85px 0px 0px 0px;
+  }
+  @media (max-width: 768px) {
+    padding: 70px 0px 0px 0px;
+  }
+}
+
+body {
+  .menu-open & {
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 40;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.container {
+  padding-left: max(var(--calculated-padding), var(--container-padding));
+  padding-right: max(var(--calculated-padding), var(--container-padding));
+
+  &__inner {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.container.container_extract-l {
+  padding-left: 0;
+}
+
+.container.container_extract-lp {
+  padding-left: var(--container-padding);
+}
+
+.container.container_extract-r {
+  padding-right: 0;
+}
+
+.container.container_extract-rp {
+  padding-right: var(--container-padding);
+}
+
+.container.container_extract-lr {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container.container_extract-lrp {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container.container_blog {
+  --calculated-padding: calc((100% - 1195px) / 2);
+}
+
+.form-grid1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 16px;
+
+  &__row {
+    grid-column: span 12;
+  }
+
+  &__row_2 {
+    grid-column: span 6;
+  }
+
+  &__row_4 {
+    grid-column: span 3;
+  }
+
+  &__buttons {
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    grid-column: span 12;
+    gap: 30px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 14px 0px 0px 0px;
+      gap: 10px;
+    }
+    .btn {
+      flex: 0 0 205px;
+      @media (max-width: 768px) {
+        flex: 1 1 auto;
+        width: 100%;
+      }
+    }
+    .textblock1 {
+      flex: 0 1 255px;
+      @media (max-width: 768px) {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: 0px 25px;
+      }
+    }
+  }
+}

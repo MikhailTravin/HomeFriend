@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>О нас</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__item is-active">
+							<span>О нас</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="block-about block2">
+				<div class="container">
+					<div class="block-about__content">
+						<div class="block-about__image">
+							<img src="img/image3.webp" alt="">
+							<h1 class="title1">
+								О компании
+							</h1>
+						</div>
+						<div class="block-about__column">
+							<div class="descr">
+								<h2 class="title2">
+									С 2014 года наша Группа Компаний начала свою деятельность в области продажи
+									строительных
+									материалов, оборудования и выполнения строительно-монтажных работ.
+								</h2>
+								<p>
+									За более чем 10-летнюю безупречную работу, мы заслужили репутацию надежного и
+									добросовестного партнера, как у частных клиентов, так и у крупных компаний и
+									организаций. Мы являемся надежным партнером таких организаций, как АО
+									«Дорожно-строительная компания «АВТОБАН», структур Федерального дорожного агентства
+									(ФКУ
+									«Центравтомагистраль», ФКУ «Управление автомобильной магистрали
+									Москва-Нижний Новгород»)
+								</p>
+							</div>
+						</div>
+						<div class="block-about__column black">
+							<div class="descr">
+								<img src="img/house.svg" alt="" class="about-house">
+								<h2 class="title2">
+									В 2019 году компанией ООО «МТМ» в Московской области было запущено производство
+									изделий из высокопрочного армированного бетона по технологии вибролитья из
+									качественного экологически чистого сырья.
+								</h2>
+								<p>
+									Мы вышли на рынок частного домостроения Московского региона с предложением  
+									фасадной
+									и цокольной плитки, облицовочного камня. По желанию Клиентов изделия могут быть
+									выполнены в любом цвете —
+									от серого (неокрашенного), в моноцвете и до сложных сочетаний цветов, имитирующих
+									мрамор.
+								</p>
+								<p>
+									Поставки данных материалов мы сопровождаем профессиональным монтажом и отделкой —
+									как фасадов, так и цоколей. Как новых, так и реконструируемых домов.
+								</p>
+							</div>
+						</div>
+						<div class="block-about__column">
+							<div class="descr">
+								<h2 class="title2">
+									Изучив пожелания наших Клиентов и проанализировав рынок отделочных материалов для
+									фасадов и цоколей – мы расширили наш ассортимент востребованными изделиями
+									от наших партнеров и надежных Поставщиков.
+								</h2>
+								<p>
+									В нашем ассортименте появились:
+								</p>
+								<p class="border">
+									термопанели с гибким кирпичом и клинкерной плиткой ведущих производителей на основе
+									ППС (Пенополистирола) и ППУ (Пенополиуритана); искусственный камень лучших
+									российских поставщиков, японская гибкая керамика PHOMI , гибкий кирпич, термодоска и
+									многое другое.
+								</p>
+								<p>
+									Расширяя ассортимент, мы в первую очередь старались максимально удовлетворить
+									потребности наших клиентов при выборе необходимых им материалов.
+								</p>
+								<p>
+									Мы очень тщательно относимся к ассортименту, который предлагаем нашим клиентам и
+									выбираем исключительно проверенных и надежных поставщиков, которые на 100%
+									гарантируют качество своей продукции.
+								</p>
+							</div>
+						</div>
+						<div class="block-about__column grey">
+							<div class="descr">
+								<h2 class="title2">
+									Наши Клиенты — это домовладельцы и частные строители, торговые и строительные
+									компании, архитекторы и проектировщики, застройщики и инвесторы проектов.
+								</h2>
+								<p>
+									Все те, кто покупают для личного пользования или продажи, для нового строительства
+									или реконструкции. Любой может стать нашим клиентом.
+								</p>
+								<p>
+									Со всеми нашими предложениями, как по материалам, так и по монтажу, Вы можете
+									ознакомиться на нашем сайте, в личных консультациях с нашим специалистами - позвонив
+									нам, или посетив наш шоурум.
+								</p>
+							</div>
+						</div>
+						<div class="block-about__column">
+							<div class="block-feedback__inner">
+								<h2 class="title2">
+									Остались вопросы?
+									<br>
+									Оставьте заявку и мы свяжемся
+									с Вами в ближайшее время
+								</h2>
+								<form data-validate action="feedback.php" class="block-feedback__right">
+									<div class="form-grid1 form-feedback">
+										<div class="form-grid1__row">
+											<div class="form-group form-group1">
+												<input class="field-input1" id="feedback_name" name="feedback_name"
+													placeholder="" type="text" required>
+												<label for="feedback_name"
+													class="form-group1__placeholder form-group1__placeholder_req">ФИО</label>
+											</div>
+										</div>
+										<div class="form-grid1__row">
+											<div class="form-group form-group1">
+												<input class="field-input1" data-type="phone" data-mask="phone"
+													id="feedback_phone" name="feedback_phone" placeholder=" "
+													type="text" required>
+												<label for="feedback_phone"
+													class="form-group1__placeholder form-group1__placeholder_req"><span>+7</span>
+													(999)-99-99</label>
+											</div>
+										</div>
+										<div class="form-grid1__row">
+											<div class="form-group form-group1">
+												<input class="field-input1" data-type="email" id="feedback_email"
+													name="feedback_email" placeholder=" " type="text" required>
+												<label for="feedback_email"
+													class="form-group1__placeholder form-group1__placeholder_req">E-mail</label>
+											</div>
+										</div>
+										<div class="form-grid1__buttons">
+											<button class="btn btn_primary" type="submit">
+												<span>Отправить заявку</span>
+												<svg aria-hidden="true" width="16" height="16">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</button>
+											<div class="textblock1 textblock1_small">Нажимая на кнопку «Отправить
+												заявку»,
+												Вы соглашаетесь на <a href="#">обработку персональных данных</a></div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/popups.njk' %}
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

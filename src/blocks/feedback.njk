@@ -1,0 +1,49 @@
+<section class="block-feedback block2">
+    <div class="container">
+        <div class="block-feedback__inner">
+            <div class="block-feedback__left">
+                <h2 class="title2">
+                    <span>Остались вопросы?</span>
+                    Оставьте заявку и мы свяжемся
+                    с Вами в ближайшее время
+                </h2>
+            </div>
+            <form data-validate action="feedback.php" class="block-feedback__right">
+                <div class="form-grid1 form-feedback">
+                    <div class="form-grid1__row">
+                        <div class="form-group form-group1">
+                            <input class="field-input1" id="feedback_name" name="feedback_name" placeholder=""
+                                type="text" required>
+                            <label for="feedback_name" class="form-group1__placeholder form-group1__placeholder_req">ФИО</label>
+                        </div>
+                    </div>
+                    <div class="form-grid1__row">
+                        <div class="form-group form-group1">
+                            <input class="field-input1" data-type="phone" data-mask="phone" id="feedback_phone"
+                                name="feedback_phone" placeholder=" " type="text" required>
+                            <label for="feedback_phone" class="form-group1__placeholder form-group1__placeholder_req"><span>+7</span>
+                                (999)-99-99</label>
+                        </div>
+                    </div>
+                    <div class="form-grid1__row">
+                        <div class="form-group form-group1">
+                            <input class="field-input1" data-type="email" id="feedback_email" name="feedback_email"
+                                placeholder=" " type="text" required>
+                            <label for="feedback_email" class="form-group1__placeholder form-group1__placeholder_req">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="form-grid1__buttons">
+                        <button class="btn btn_primary" type="submit">
+                            <span>Отправить заявку</span>
+                            <svg aria-hidden="true" width="16" height="16">
+                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                            </svg>
+                        </button>
+                        <div class="textblock1 textblock1_small">Нажимая на кнопку «Отправить заявку»,
+                            Вы соглашаетесь на <a href="#">обработку персональных данных</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

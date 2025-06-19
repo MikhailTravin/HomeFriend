@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Поиск по каталогу</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__item is-active">
+							<span>Поиск по каталогу</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="heading-complex">
+				<div class="search">
+					<div class="search__content">
+						<h1 class="title2">Поиск по каталогу</h1>
+						<form action="search.php">
+							<button class="search__icon" type="submit">
+								<svg aria-hidden="true" width="20" height="20">
+									<use xlink:href="img/sprite.svg#search1"></use>
+								</svg>
+								<span class="v-h">Искать</span>
+							</button>
+							<input class="search__input" value="Софит" type="text">
+							<button class="search__delete" type="button">
+								<svg aria-hidden="true" width="16" height="16">
+									<use xlink:href="img/sprite.svg#close1"></use>
+								</svg>
+								<span class="v-h">Искать</span>
+							</button>
+						</form>
+						<div class="search__dropdown">
+							<!--
+              <div class="search__nofound">
+                Ничего не найдено
+              </div>
+              -->
+							<ul class="search__results">
+								<li>
+									<a href="#">
+										<img loading="lazy" src="img/products/product1.webp" alt="">
+										<span>Искусственный камень</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img loading="lazy" src="img/products/product1.webp" alt="">
+										<span>Искусственный камень</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img loading="lazy" src="img/products/product1.webp" alt="">
+										<span>Искусственный камень</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Искусственный камень</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Искусственный камень</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<p>
+							По запросу <span>«Софит»</span> найдено товаров: 155
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-catalog-detail search-block block2">
+				<div class="container">
+					<div class="block-catalog-detail__content">
+						<div class="block-catalog-detail__body">
+							<div class="block-catalog-detail__cards">
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product1.webp" alt="">
+										<div class="card-product__tags">
+											<div class="card-product__tag yellow">
+												Хит
+											</div>
+										</div>
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Металлический сайдинг Аквасистем Скандинавская доска узкая
+												двойная
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__old-price">
+													<s>
+														1 200 ₽
+													</s>
+													<div class="card-product__sale">
+														-20%
+													</div>
+												</div>
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product2.webp" alt="">
+										<div class="card-product__tags">
+											<div class="card-product__tag green">
+												Новинка
+											</div>
+										</div>
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Софит Docke Premium с центральной перфорацией
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													По запросу
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product3.webp" alt="">
+										<div class="card-product__tags">
+											<div class="card-product__tag red">
+												Акция
+											</div>
+										</div>
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Фиброцементный сайдинг Decover Terracotta
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product2.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Софит Docke Premium с центральной перфорацией
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													По запросу
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product3.webp" alt="">
+										<div class="card-product__tags">
+											<div class="card-product__tag yellow">
+												Хит
+											</div>
+											<div class="card-product__tag green">
+												Новинка
+											</div>
+										</div>
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Фиброцементный сайдинг Decover Terracotta
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product1.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Металлический сайдинг Аквасистем Скандинавская доска узкая
+												двойная
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__old-price">
+													<s>
+														1 200 ₽
+													</s>
+													<div class="card-product__sale">
+														-20%
+													</div>
+												</div>
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product3.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Фиброцементный сайдинг Decover Terracotta
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product1.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Металлический сайдинг Аквасистем Скандинавская доска узкая
+												двойная
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__old-price">
+													<s>
+														1 200 ₽
+													</s>
+													<div class="card-product__sale">
+														-20%
+													</div>
+												</div>
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product2.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Софит Docke Premium с центральной перфорацией
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													По запросу
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product1.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Металлический сайдинг Аквасистем Скандинавская доска узкая
+												двойная
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__old-price">
+													<s>
+														1 200 ₽
+													</s>
+													<div class="card-product__sale">
+														-20%
+													</div>
+												</div>
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product2.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Софит Docke Premium с центральной перфорацией
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													По запросу
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/product3.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<a href="product-card.html" class="card-product__top">
+											<div class="card-product__article">
+												Артикул: PSVE-1044
+											</div>
+											<div class="card-product__title">
+												Фиброцементный сайдинг Decover Terracotta
+											</div>
+											<div class="card-product__stock">
+												В наличии
+											</div>
+										</a>
+										<div class="card-product__bottom">
+											<div class="card-product__prices">
+												<div class="card-product__price">
+													852 ₽/кв.м
+												</div>
+											</div>
+											<div class="card-product__descr">
+												<div class="card-product__characteristics characteristics-products">
+													<button type="button" class="characteristics-products__button">
+														<svg aria-hidden="true" width="6" height="15">
+															<use xlink:href="img/sprite.svg#i"></use>
+														</svg>
+													</button>
+													<div class="characteristics-products__body">
+														<div class="characteristics-products__speech-bubble">
+															<div class="characteristics-products__title">
+																Характеристики</div>
+															<ul>
+																<li>
+																	<div class="characteristics-products__name">
+																		Торговая марка:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Aquasystem
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Профиль:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Скандинавская доска
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Покрытие:
+																	</div>
+																	<div class="characteristics-products__value">
+																		Матовый полиэстер
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Длина:
+																	</div>
+																	<div class="characteristics-products__value">
+																		3 м
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Площадь листа, м2:
+																	</div>
+																	<div class="characteristics-products__value">
+																		0.615
+																	</div>
+																</li>
+																<li>
+																	<div class="characteristics-products__name">
+																		Ширина, мм:
+																	</div>
+																	<div class="characteristics-products__value">
+																		230
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<button type="button" class="card-product__cart">
+													<svg aria-hidden="true" width="24" height="24">
+														<use xlink:href="img/sprite.svg#basket1"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							{% include 'blocks/pagging.njk' %}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% include 'blocks/about-footer.njk' %}
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/popups.njk' %}
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

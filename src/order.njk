@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Корзина</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="cart.html">
+								Корзина
+							</a>
+						</li>
+						<li class="breadcrumbs__item is-active">
+							<span>Оформление заказа</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="heading-complex">
+				<div class="heading-complex__cart order-cart">
+					<h1 class="title2">Оформление заказа</h1>
+					<a href="cart.html" class="heading-complex__edit">
+						<svg width="20" height="20" aria-hidden="true">
+							<use xlink:href="img/sprite.svg#edit"></use>
+						</svg>
+						<span>Изменить заказ</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="block-order block2">
+				<div class="container">
+					<form data-validate action="#" class="block-order__content">
+						<div class="block-order__body">
+							<div class="block-order__column">
+								<div class="block-order__title">Покупатель</div>
+								<div class="form-grid1">
+									<div class="form-grid1__row">
+										<div class="form-group form-group1">
+											<input class="field-input1" id="feedback_name" name="feedback_name"
+												placeholder="" type="text" required>
+											<label for="feedback_name"
+												class="form-group1__placeholder form-group1__placeholder_req">ФИО</label>
+										</div>
+									</div>
+									<div class="form-grid1__row">
+										<div class="form-group form-group1">
+											<input class="field-input1" data-type="phone" data-mask="phone"
+												id="feedback_phone" name="feedback_phone" placeholder=" " type="text"
+												required>
+											<label for="feedback_phone"
+												class="form-group1__placeholder form-group1__placeholder_req"><span>+7</span>
+												(999)-99-99</label>
+										</div>
+									</div>
+									<div class="form-grid1__row">
+										<div class="form-group form-group1">
+											<input class="field-input1" data-type="email" id="feedback_email"
+												name="feedback_email" placeholder=" " type="text" required="">
+											<label for="feedback_email"
+												class="form-group1__placeholder form-group1__placeholder_req">E-mail</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block-order__column">
+								<div class="block-order__title">Где и как вы хотите получить заказ?</div>
+								<ul class="block-order-radio checklist">
+									<li class="checklist__item">
+										<label data-target=".self-delivery-block" class="checkbox-text self-delivery">
+											<span class="radio">
+												<input checked class="radio__input" type="radio" name="rad1">
+												<span class="radio__visual"></span>
+											</span>
+											<span class="checkbox-text__label">
+												<span class="checkbox-text__title">Самовывоз</span>
+											</span>
+										</label>
+									</li>
+									<li class="checklist__item">
+										<label data-target=".courier-delivery-block" class="checkbox-text courier-delivery">
+											<span class="radio">
+												<input class="radio__input" type="radio" name="rad1">
+												<span class="radio__visual"></span>
+											</span>
+											<span class="checkbox-text__label">
+												<span class="checkbox-text__title">Доставка курьером</span>
+											</span>
+										</label>
+									</li>
+								</ul>
+								<div class="bottom-block-order self-delivery-block">
+									<div class="bottom-block-order__title">Пункты самовывоза</div>
+									<div class="bottom-block-order__body">
+										<ul class="checklist">
+											<li class="checklist__item">
+												<label class="checkbox-text self-delivery">
+													<span class="radio">
+														<input checked class="radio__input" type="radio" name="rad2">
+														<span class="radio__visual"></span>
+													</span>
+													<span class="checkbox-text__label">
+														<div class="checkbox-text__contacts-info">
+															<div class="contacts-info__name">
+																Шоурум Москва
+															</div>
+															<div class="contact">
+																<div class="contact__item">
+																	<svg aria-hidden="true" width="15" height="18">
+																		<use xlink:href="img/sprite.svg#location"></use>
+																	</svg>
+																	<span>г.&nbsp;Москва, ул.&nbsp;Шеногина, д.&nbsp;4
+																		корп.1</span>
+																</div>
+																<a href="tel:79998765432" class="contact__item">
+																	<svg aria-hidden="true" width="18" height="18">
+																		<use xlink:href="img/sprite.svg#phone"></use>
+																	</svg>
+																	<span>+7 (999) 876-54-32</span>
+																</a>
+																<div class="contact__item">
+																	<svg aria-hidden="true" width="18" height="18">
+																		<use xlink:href="img/sprite.svg#clock"></use>
+																	</svg>
+																	<span>ПН-ПТ с 9:00 до 18:00</span>
+																</div>
+															</div>
+														</div>
+													</span>
+												</label>
+											</li>
+											<li class="checklist__item">
+												<label class="checkbox-text self-delivery">
+													<span class="radio">
+														<input checked class="radio__input" type="radio" name="rad2">
+														<span class="radio__visual"></span>
+													</span>
+													<span class="checkbox-text__label">
+														<div class="checkbox-text__contacts-info">
+															<div class="contacts-info__name">
+																Шоурум Москва
+															</div>
+															<div class="contact">
+																<div class="contact__item">
+																	<svg aria-hidden="true" width="15" height="18">
+																		<use xlink:href="img/sprite.svg#location"></use>
+																	</svg>
+																	<span>г.&nbsp;Москва, ул.&nbsp;Шеногина, д.&nbsp;4
+																		корп.1</span>
+																</div>
+																<a href="tel:79998765432" class="contact__item">
+																	<svg aria-hidden="true" width="18" height="18">
+																		<use xlink:href="img/sprite.svg#phone"></use>
+																	</svg>
+																	<span>+7 (999) 876-54-32</span>
+																</a>
+																<div class="contact__item">
+																	<svg aria-hidden="true" width="18" height="18">
+																		<use xlink:href="img/sprite.svg#clock"></use>
+																	</svg>
+																	<span>ПН-ПТ с 9:00 до 18:00</span>
+																</div>
+															</div>
+														</div>
+													</span>
+												</label>
+											</li>
+										</ul>
+										<div id="map2" class="bottom-block-order__map"></div>
+									</div>
+								</div>
+								<div class="bottom-block-order courier-delivery-block">
+									<div class="bottom-block-order__title">Укажите адрес доставки</div>
+									<div class="form-grid1">
+										<div class="form-grid1__row">
+											<div class="form-group form-group1">
+												<input class="field-input1" id="feedback_address" name="feedback_address"
+													placeholder="" type="text" required>
+												<label for="feedback_address"
+													class="form-group1__placeholder form-group1__placeholder_req">Адрес доставки</label>
+											</div>
+										</div>
+										<div class="form-grid1__row">
+											<div class="form-group form-group1">
+												<input class="field-input1"
+													id="feedback_approach" name="feedback_approach" placeholder=" "
+													type="text">
+												<label for="feedback_approach"
+													class="form-group1__placeholder">Подъезд</label>
+											</div>
+										</div>
+										<div class="form-grid1__row">
+											<div class="form-group form-group1">
+												<input class="field-input1"
+													id="feedback_floor" name="feedback_floor" placeholder=" "
+													type="text">
+												<label for="feedback_floor"
+													class="form-group1__placeholder">Этаж</label>
+											</div>
+										</div>
+										<div class="form-grid1__row">
+											<div class="form-group form-group1">
+												<input class="field-input1"
+													id="feedback_apartment" name="feedback_apartment" placeholder=" "
+													type="text">
+												<label for="feedback_apartment"
+													class="form-group1__placeholder">Квартира</label>
+											</div>
+										</div>
+										<div class="form-grid1__row">
+											<div class="form-group form-group1 textarea">
+												<textarea class="field-input1" id="feedback_message"
+													name="feedback_message" placeholder=" "></textarea>
+												<label for="feedback_message"
+													class="form-group1__placeholder">Комментарий к
+													заказу</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block-order__column">
+								<div class="block-order__title">Товары в заказе</div>
+								<div class="cards-product">
+									<div class="card-product">
+										<div class="card-product__image">
+											<img loading="lazy" src="img/products/product2.webp" alt="">
+										</div>
+										<div class="card-product__item">
+											<a href="product-card.html" class="card-product__top">
+												<div class="card-product__article">
+													Артикул: PSVE-1044
+												</div>
+												<div class="card-product__title">
+													Софит Docke Premium с центральной перфорацией
+												</div>
+												<div class="card-product__stock">
+													В наличии
+												</div>
+											</a>
+											<div class="card-product__bottom">
+												<div class="card-product__stepcounter">
+													<span>1 уп.</span>
+												</div>
+												<div class="card-product__prices">
+													<div class="card-product__old-price">
+														<s>
+															1 200 ₽
+														</s>
+														<div class="card-product__sale">
+															-20%
+														</div>
+													</div>
+													<div class="card-product__price">
+														852 ₽/кв.м
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product">
+										<div class="card-product__image">
+											<img loading="lazy" src="img/products/product2.webp" alt="">
+										</div>
+										<div class="card-product__item">
+											<a href="product-card.html" class="card-product__top">
+												<div class="card-product__article">
+													Артикул: PSVE-1044
+												</div>
+												<div class="card-product__title">
+													Софит Docke Premium с центральной перфорацией
+												</div>
+												<div class="card-product__stock">
+													В наличии
+												</div>
+											</a>
+											<div class="card-product__bottom">
+												<div class="card-product__stepcounter">
+													<span>1 шт.</span>
+												</div>
+												<div class="card-product__prices">
+													<div class="card-product__old-price">
+														<s>
+															1 200 ₽
+														</s>
+														<div class="card-product__sale">
+															-20%
+														</div>
+													</div>
+													<div class="card-product__price">
+														852 ₽/кв.м
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-product">
+										<div class="card-product__image">
+											<img loading="lazy" src="img/products/product2.webp" alt="">
+										</div>
+										<div class="card-product__item">
+											<a href="product-card.html" class="card-product__top">
+												<div class="card-product__article">
+													Артикул: PSVE-1044
+												</div>
+												<div class="card-product__title">
+													Софит Docke Premium с центральной перфорацией
+												</div>
+												<div class="card-product__stock">
+													В наличии
+												</div>
+											</a>
+											<div class="card-product__bottom">
+												<div class="card-product__stepcounter">
+													<span>1 уп.</span>
+												</div>
+												<div class="card-product__prices">
+													<div class="card-product__old-price">
+														<s>
+															1 200 ₽
+														</s>
+														<div class="card-product__sale">
+															-20%
+														</div>
+													</div>
+													<div class="card-product__price">
+														852 ₽/кв.м
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="detail-cart">
+							<div class="detail-cart__sticky">
+								<div class="detail-cart__title">
+									Детали заказа
+								</div>
+								<ul>
+									<li>
+										<div class="detail-cart__name">3 товара</div>
+										<div class="detail-cart__value">3600 ₽</div>
+									</li>
+									<li>
+										<div class="detail-cart__name">Скидка</div>
+										<div class="detail-cart__value green">-1044 ₽</div>
+									</li>
+								</ul>
+								<div class="detail-cart__totals">
+									<div class="detail-cart__total">Итого:</div>
+									<div class="detail-cart__sum">2556 ₽</div>
+								</div>
+								<button type="submit" class="btn btn_black">Оформить заказ</button>
+								<div class="textblock1 textblock1_small">
+									Нажимая на кнопку, Вы соглашаетесь на <a href="#">обработку персональных
+										данных</a>
+									и с <a href="#">публичной офертой</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	<script
+		src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU&amp;_v=20240623012845&_v=20250429150847"></script>
+	{% include 'blocks/popups.njk' %}
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

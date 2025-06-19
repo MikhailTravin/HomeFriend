@@ -1,0 +1,50 @@
+<div class="hystmodal" id="modalCallback" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <div class="hystmodal__inner">
+                <div class="hystmodal__top">
+                    <div class="hystmodal__title">Закажите звонок</div>
+                    <div class="hystmodal__description textblock">
+                        Наши специалисты свяжуться с Вами в ближайшее время
+                    </div>
+                </div>
+                <form data-validate action="feedback.php">
+                    <div class="form-grid1">
+                        <div class="form-grid1__row">
+                            <div class="form-group form-group1">
+                                <input class="field-input1" id="feedback_name" name="feedback_name" placeholder=""
+                                    type="text" required>
+                                <label for="feedback_name"
+                                    class="form-group1__placeholder form-group1__placeholder_req">ФИО</label>
+                            </div>
+                        </div>
+                        <div class="form-grid1__row">
+                            <div class="form-group form-group1">
+                                <input class="field-input1" data-type="phone" data-mask="phone" id="feedback_phone"
+                                    name="feedback_phone" placeholder=" " type="text" required>
+                                <label for="feedback_phone"
+                                    class="form-group1__placeholder form-group1__placeholder_req"><span>+7</span>
+                                    (999)-99-99</label>
+                            </div>
+                        </div>
+                        <div class="form-grid1__buttons">
+                            <button class="btn btn_primary" type="submit">
+                                <span>Заказать звонок</span>
+                            </button>
+                            <div class="textblock1 textblock1_small">
+                                Нажимая на кнопку «Заказать звонок», Вы соглашаетесь
+                                на <a href="#">обработку персональных данных</a> и с <a href="#">публичной офертой</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button data-hystclose class="hystmodal__close">
+                <svg aria-hidden="true" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#close1"></use>
+                </svg>
+                <span class="v-h">Закрыть</span>
+            </button>
+        </div>
+    </div>
+</div>

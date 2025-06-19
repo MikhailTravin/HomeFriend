@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Каталог</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__item is-active">
+							<span>Каталог</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="heading-complex">
+				<div class="container">
+					<div class="heading-complex__content">
+						<h1 class="title2">Каталог товаров</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-catalog block2">
+				<div class="container">
+					<div class="block-catalog__content">
+						<div class="card-catalog">
+							<div class="card-catalog__item">
+								<a href="catalog-detail.html" class="card-catalog__title">Архитектурный бетон</a>
+								<ul>
+									<li>
+										<a href="catalog-detail.html">Для отделки фасадов</a>
+									</li>
+									<li>
+										<a href="catalog-detail.html">Для отделки цоколей</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-catalog__image">
+								<img loading="lazy" src="img/catalog/catalog1.webp" alt="">
+							</div>
+						</div>
+						<div class="card-catalog">
+							<div class="card-catalog__item">
+								<a href="catalog-detail.html" class="card-catalog__title">Искусственный камень</a>
+								<ul>
+									<li>
+										<a href="catalog-detail.html">Atlas Stone</a>
+									</li>
+									<li>
+										<a href="catalog-detail.html">Leonardo Stone</a>
+									</li>
+									<li>
+										<a href="catalog-detail.html">White Hills</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-catalog__image">
+								<img loading="lazy" src="img/catalog/catalog2.webp" alt="">
+							</div>
+						</div>
+						<div class="card-catalog">
+							<div class="card-catalog__item">
+								<a href="catalog-detail.html" class="card-catalog__title">Термопанели</a>
+								<ul>
+									<li>
+										<a href="catalog-detail.html">BEND STONE</a>
+									</li>
+									<li>
+										<a href="catalog-detail.html">BestPoint Ceramics</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-catalog__image">
+								<img loading="lazy" src="img/catalog/catalog3.webp" alt="">
+							</div>
+						</div>
+						<div class="card-catalog">
+							<div class="card-catalog__item">
+								<a href="catalog-detail.html" class="card-catalog__title">Гибкий кирпич</a>
+							</div>
+							<div class="card-catalog__image">
+								<img loading="lazy" src="img/catalog/catalog4.webp" alt="">
+							</div>
+						</div>
+						<div class="card-catalog">
+							<div class="card-catalog__item">
+								<a href="catalog-detail.html" class="card-catalog__title">Гибкая керамика</a>
+								<ul>
+									<li>
+										<a href="catalog-detail.html">PHOMI</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-catalog__image">
+								<img loading="lazy" src="img/catalog/catalog5.webp" alt="">
+							</div>
+						</div>
+						<div class="card-catalog">
+							<div class="card-catalog__item">
+								<a href="catalog-detail.html" class="card-catalog__title">Термодревесина</a>
+							</div>
+							<div class="card-catalog__image">
+								<img loading="lazy" src="img/catalog/catalog6.webp" alt="">
+							</div>
+						</div>
+						<div class="card-catalog">
+							<div class="card-catalog__item">
+								<a href="catalog-detail.html" class="card-catalog__title">Строительные материалы</a>
+							</div>
+							<div class="card-catalog__image">
+								<img loading="lazy" src="img/catalog/catalog13.webp" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% include 'blocks/about-footer.njk' %}
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/popups.njk' %}
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Фото</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="index.html">
+								Медиа
+							</a>
+						</li>
+						<li class="breadcrumbs__item is-active">
+							<span>Цвет фасада дома: рекомендации по подбору и удачные сочетания цветов на фото</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="block-detail block2">
+				<div class="container">
+					<a href="media.html" class="back">
+						<svg aria-hidden="true" width="16" height="16">
+							<use xlink:href="img/sprite.svg#arrow1"></use>
+						</svg>
+						<span>Вернуться к медиа</span>
+					</a>
+					<div class="block-detail__content">
+						<h1 class="title2">
+							Цвет фасада дома: удачные сочетания цветов на фото
+						</h1>
+						<div class="block-detail__subtitle">
+							<div class="block-detail__data">01.01.2025</div>
+							<button type="button" class="block-detail__share">
+								<svg aria-hidden="true" width="16" height="16">
+									<use xlink:href="img/sprite.svg#share"></use>
+								</svg>
+								<span>Поделиться</span>
+							</button>
+						</div>
+						<div class="descr">
+							<p>
+								Выбор цвета для фасада дома – важный этап, от которого зависит не только эстетика, но и
+								долговечность, гармоничность внешнего облика и комфорт восприятия. В этой статье
+								разбираемся, как подобрать оттенок, учитывая климат, расположение участка, архитектурные
+								особенности, окружение, стиль интерьера и тип фасадного материала. Делимся практическими
+								советами и подсказываем, как создать целостный образ дома и участка.
+							</p>
+							<p>
+								На первый взгляд кажется, что выбрать цвет для фасада дома – задача несложная. Нужно
+								просто зайти в строительный магазин, пролистать каталог или прислушаться к совету
+								консультанта, подобрать понравившийся оттенок – и дело сделано.
+							</p>
+							<p>
+								Однако на практике всё обстоит иначе. Сразу возникает закономерный вопрос: почему
+								большинство домов окрашено в нейтральные тона – бежевый, серый или другие приглушённые
+								цвета? Где же яркость и индивидуальность?
+							</p>
+							<p>
+								В этой статье попробуем разобраться, что влияет на выбор цветовой палитры для фасадов,
+								почему так важно учитывать не только личные предпочтения, но и множество внешних
+								факторов. А главное – рассмотрим, к каким проблемам может привести неудачное цветовое
+								решение.
+							</p>
+						</div>
+						<div class="gallery">
+							<a href="img/gallery/image1.webp" data-fancybox="gallery">
+								<img src="img/gallery/image1.webp" alt="">
+							</a>
+							<a href="img/gallery/image2.webp" data-fancybox="gallery">
+								<img src="img/gallery/image2.webp" alt="">
+							</a>
+							<a href="img/gallery/image3.webp" data-fancybox="gallery">
+								<img src="img/gallery/image3.webp" alt="">
+							</a>
+							<a href="img/gallery/image4.webp" data-fancybox="gallery">
+								<img src="img/gallery/image4.webp" alt="">
+							</a>
+							<a href="img/gallery/image5.webp" data-fancybox="gallery">
+								<img src="img/gallery/image5.webp" alt="">
+							</a>
+							<a href="img/gallery/image6.webp" data-fancybox="gallery">
+								<img src="img/gallery/image6.webp" alt="">
+							</a>
+							<a href="img/gallery/image7.webp" data-fancybox="gallery">
+								<img src="img/gallery/image7.webp" alt="">
+							</a>
+							<a href="img/gallery/image1.webp" data-fancybox="gallery">
+								<img src="img/gallery/image1.webp" alt="">
+							</a>
+							<a href="img/gallery/image1.webp" data-fancybox="gallery">
+								<img src="img/gallery/image1.webp" alt="">
+							</a>
+							<a href="img/gallery/image2.webp" data-fancybox="gallery">
+								<img src="img/gallery/image2.webp" alt="">
+							</a>
+							<a href="img/gallery/image3.webp" data-fancybox="gallery">
+								<img src="img/gallery/image3.webp" alt="">
+							</a>
+							<a href="img/gallery/image4.webp" data-fancybox="gallery">
+								<img src="img/gallery/image4.webp" alt="">
+							</a>
+							<a href="img/gallery/image5.webp" data-fancybox="gallery">
+								<img src="img/gallery/image5.webp" alt="">
+							</a>
+							<a href="img/gallery/image6.webp" data-fancybox="gallery">
+								<img src="img/gallery/image6.webp" alt="">
+							</a>
+							<a href="img/gallery/image7.webp" data-fancybox="gallery">
+								<img src="img/gallery/image7.webp" alt="">
+							</a>
+							<a href="img/gallery/image1.webp" data-fancybox="gallery">
+								<img src="img/gallery/image1.webp" alt="">
+							</a>
+						</div>
+						{% include 'blocks/pagging.njk' %}
+					</div>
+				</div>
+			</div>
+
+			{% include 'blocks/similar-articles.njk' %}
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	{% include 'blocks/popups.njk' %}
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
